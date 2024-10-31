@@ -1,0 +1,14 @@
+{
+  "line_select": [{ "id": 1, "label": "Circular 01", "num": 1 }],
+  "start_select": [
+    { "id": 1, "label": "Saída da Rodoviária" },
+    { "id": 2, "label": "Saída do Cecap" }
+  ],
+  "day_select": [
+    { "id": 1, "label": "Segunda-feira" },
+    { "id": 2, "label": "Terça-feira" },
+    { "id": 3, "label": "Quarta-feira" },
+    { "id": 4, "label": "Quinta-feira" },
+    { "id": 5, "label": "Sexta-feira" }
+  ]
+}
