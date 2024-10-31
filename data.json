@@ -1,5 +1,5 @@
 {
-  "line_select": [{ "id": 1, "label": "Circular 01", "num": 1 }],
+  "line_select": [{ "id": 1, "label": "Circular 01" }],
   "start_select": [
     { "id": 1, "label": "Saída da Rodoviária" },
     { "id": 2, "label": "Saída do Cecap" }

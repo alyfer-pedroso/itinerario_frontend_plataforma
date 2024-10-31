@@ -12,12 +12,24 @@
     <header id="index-header"></header>
     <main id="index-main">
       <form action="POST" id="index-form">
-        <select id="line_select"></select>
-        <select id="start_select"></select>
-        <select id="day_select"></select>
+        <select id="line_select">
+          <option value="0" disabled selected>Selecione uma linha</option>
+        </select>
+
+        <select id="start_select">
+          <option value="0" disabled selected>Selecione a partida</option>
+        </select>
+
+        <select id="day_select">
+          <option value="0" disabled selected>Selecione o dia da semana</option>
+        </select>
+
         <button type="submit" form="index-form">Confirmar</button>
       </form>
     </main>
     <footer id="index-footer"></footer>
+
+    <script src="./scripts/beluga.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
