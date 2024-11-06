@@ -1,5 +1,8 @@
 (() => {
+  const $lineSelect = document.getElementById("line_select");
+
   let jsonData;
+
   async function RenderOptionsInSelect(select) {
     const $select = document.getElementById(select);
 
@@ -14,6 +17,8 @@
       });
     }
   }
+
+  $lineSelect.addEventListener("change", () => RenderOptionsInSelect("start_select"));
 
   RenderOptionsInSelect("line_select");
 })();
