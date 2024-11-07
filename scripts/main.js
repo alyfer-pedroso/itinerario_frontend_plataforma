@@ -1,6 +1,7 @@
 (() => {
   const $lineSelect = document.getElementById("line_select");
   const $startSelect = document.getElementById("start_select");
+  const $indexForm = document.getElementById("index-form");
 
   let jsonData;
 
@@ -21,6 +22,14 @@
 
   $lineSelect.addEventListener("change", () => RenderOptionsInSelect("start_select"));
   $startSelect.addEventListener("change", () => RenderOptionsInSelect("day_select"));
+
+  $indexForm.addEventListener("submit", (Event) => {
+    Event.preventDefault()
+    const Form = Event.target
+
+    const lineSelected = Form.elements["line_select"].value
+    console.log(lineSelected)
+  })
 
   RenderOptionsInSelect("line_select");
 })();
