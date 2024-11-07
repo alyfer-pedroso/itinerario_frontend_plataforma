@@ -1,5 +1,6 @@
 (() => {
   const $lineSelect = document.getElementById("line_select");
+  const $startSelect = document.getElementById("start_select");
 
   let jsonData;
 
@@ -19,6 +20,7 @@
   }
 
   $lineSelect.addEventListener("change", () => RenderOptionsInSelect("start_select"));
+  $startSelect.addEventListener("change", () => RenderOptionsInSelect("day_select"));
 
   RenderOptionsInSelect("line_select");
 })();
