@@ -27,8 +27,13 @@
     Event.preventDefault()
     const Form = Event.target
 
-    const lineSelected = Form.elements["line_select"].value
-    console.log(lineSelected)
+    const FullData = {
+      line: Form.elements["line_select"].value,
+      start: Form.elements["start_select"].value,
+      day: Form.elements["day_select"].value,
+    }
+
+    localStorage.setItem("BusData", JSON.stringify(FullData))
   })
 
   RenderOptionsInSelect("line_select");
