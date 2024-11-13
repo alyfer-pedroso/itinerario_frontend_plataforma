@@ -13,7 +13,7 @@
     if (jsonData) {
       jsonData[select].forEach((item) => {
         const $option = document.createElement("option");
-        $option.value = item.id;
+        $option.value = item.value;
         $option.innerHTML = item.label;
         $select.appendChild($option);
       });
