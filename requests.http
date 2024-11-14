@@ -1,0 +1,4 @@
+# Test for the map update request (HOST-ONLY)
+
+GET https://google.com/maps/place/Rodoviaria+Salto+SP HTTP/1.1
+GET https://google.com/maps/place/Cecap+Salto+SP HTTP/1.1
