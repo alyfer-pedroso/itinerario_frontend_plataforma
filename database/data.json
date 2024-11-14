@@ -1,12 +1,12 @@
 {
   "line_select": [{ "id": 1, "label": "Circular 01" }],
   "start_select": [
-    { "id": 1, "label": "Saída da Rodoviária", "value": "rodoviaria"},
-    { "id": 2, "label": "Saída do Cecap", "value": "cecap"}
+    { "id": 1, "label": "Saída da Rodoviária", "value": "rodoviaria" },
+    { "id": 2, "label": "Saída do Cecap", "value": "cecap" }
   ],
   "day_select": [
-    { "id": 1, "label": "Domingo", "value": "sunday"},
-    { "id": 2, "label": "Segunda-feira", "value": "day"},
+    { "id": 1, "label": "Domingo", "value": "sunday" },
+    { "id": 2, "label": "Segunda-feira", "value": "day" },
     { "id": 3, "label": "Terça-feira", "value": "day" },
     { "id": 4, "label": "Quarta-feira", "value": "day" },
     { "id": 5, "label": "Quinta-feira", "value": "day" },

@@ -8,7 +8,7 @@
   async function RenderOptionsInSelect(select) {
     const $select = document.getElementById(select);
 
-    if (!jsonData) jsonData = await LoadJSON(`./data.json`);
+    if (!jsonData) jsonData = await LoadJSON(`./database/data.json`);
 
     if (jsonData) {
       jsonData[select].forEach((item) => {
@@ -24,17 +24,17 @@
   $startSelect.addEventListener("change", () => RenderOptionsInSelect("day_select"));
 
   $indexForm.addEventListener("submit", (Event) => {
-    Event.preventDefault()
-    const Form = Event.target
+    Event.preventDefault();
+    const Form = Event.target;
 
     const FullData = {
       line: Form.elements["line_select"].value,
       start: Form.elements["start_select"].value,
       day: Form.elements["day_select"].value,
-    }
+    };
 
-    localStorage.setItem("BusData", JSON.stringify(FullData))
-  })
+    localStorage.setItem("BusData", JSON.stringify(FullData));
+  });
 
   RenderOptionsInSelect("line_select");
 })();
