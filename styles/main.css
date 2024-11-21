@@ -1,0 +1,63 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+}
+
+.main_select {
+  padding: 8px 3em;
+  margin: 0;
+  appearance: none;
+  border: 0;
+  background-color: #6a6a6a;
+  border-radius: 3px 0px 0px 3px;
+  cursor: pointer;
+  color: white;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.select::after {
+  content: "\25BC";
+  padding: 1em;
+  background-color: #575757;
+  transition: 0.25s all ease;
+  pointer-events: none;
+  color: white;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.select:hover::after {
+  color: rgb(197, 197, 197);
+}
+
+button {
+  padding: 8px 3em;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(61, 103, 255);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(20, 71, 255);
+  transition: 2ms;
+  color: #ffffff;
+}
