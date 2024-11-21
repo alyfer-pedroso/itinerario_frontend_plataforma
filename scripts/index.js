@@ -27,7 +27,7 @@
       clear_select(select_name); // limpando as opções do seletor
       jsonData[select_name].forEach((item) => {
         const $option = document.createElement("option"); // criar um html OPTION
-        $option.value = item.value; // o valor do OPTION é igual o valor do ITEM do ARRAY DO JSON
+        $option.value = JSON.stringify(item); // o valor do OPTION é igual o ITEM do ARRAY DO JSON
         $option.innerHTML = item.label; // o texto do OPTION é igual o texto do ITEM do ARRAY DO JSON
 
         $select.appendChild($option); // adicionar o OPTION criado dentro do seletor
